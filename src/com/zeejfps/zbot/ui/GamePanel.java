@@ -13,11 +13,11 @@ import javax.swing.JPanel;
 import com.zeejfps.zbot.loader.RSLoader;
 
 @SuppressWarnings("serial")
-class GameTab extends JPanel {
+class GamePanel extends JPanel {
 
 	private final RSLoader loader;
 
-	public GameTab() {
+	public GamePanel() {
 		super(new BorderLayout());
 		
 		setBackground(Color.BLACK);
@@ -30,7 +30,7 @@ class GameTab extends JPanel {
 		loadingImage.setVerticalAlignment(JLabel.CENTER);
 		
 		add(loadingImage, BorderLayout.CENTER);
-		
+
 		loader = new RSLoader(this);
 		loader.execute();
 	}

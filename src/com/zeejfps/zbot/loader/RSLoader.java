@@ -1,7 +1,6 @@
 package com.zeejfps.zbot.loader;
 
 import java.applet.Applet;
-import java.awt.BorderLayout;
 import java.net.MalformedURLException;
 import java.net.URL;
 import java.net.URLClassLoader;
@@ -96,7 +95,7 @@ public class RSLoader extends SwingWorker<Applet, String>{
 		try {
 			gamePanel.setCursor(null);
 			gamePanel.removeAll();
-			gamePanel.add(get(), BorderLayout.NORTH);
+			gamePanel.add(get());
 			gamePanel.revalidate();
 			gamePanel.repaint();
 		} catch (InterruptedException e) {
